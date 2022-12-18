@@ -1,0 +1,893 @@
+{
+  "query": {
+    "apikey": "54c4f560-7e13-11ed-a8d1-13d4e30ae90a",
+    "season_id": "424"
+  },
+  "data": [
+    {
+      "match_id": 48415,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-14 14:45:00",
+      "match_start_iso": "2019-07-14T14:45:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 6,
+        "name": "Group stage"
+      },
+      "group": {
+        "group_id": 2065,
+        "group_name": "A"
+      },
+      "round": {
+        "round_id": 5506,
+        "name": "1",
+        "is_current": 1
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3104,
+        "name": "Armenia U19",
+        "short_code": "ARM",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1397.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3105,
+        "name": "Spain U19",
+        "short_code": "ESP",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1398.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 1,
+        "away_score": 4,
+        "ht_score": "0-1",
+        "ft_score": "1-4",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48420,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-14 17:00:00",
+      "match_start_iso": "2019-07-14T17:00:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 6,
+        "name": "Group stage"
+      },
+      "group": {
+        "group_id": 2065,
+        "group_name": "A"
+      },
+      "round": {
+        "round_id": 5506,
+        "name": "1",
+        "is_current": 1
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3106,
+        "name": "Italy U19",
+        "short_code": "ITA",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1399.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3107,
+        "name": "Portugal U19",
+        "short_code": "POR",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1400.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 0,
+        "away_score": 3,
+        "ht_score": "0-1",
+        "ft_score": "0-3",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48427,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-15 14:45:00",
+      "match_start_iso": "2019-07-15T14:45:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 6,
+        "name": "Group stage"
+      },
+      "group": {
+        "group_id": 2066,
+        "group_name": "B"
+      },
+      "round": {
+        "round_id": 5506,
+        "name": "1",
+        "is_current": 1
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3108,
+        "name": "Norway U19",
+        "short_code": "NOR",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1401.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3109,
+        "name": "Ireland U19",
+        "short_code": "IRL",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1402.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 1,
+        "away_score": 1,
+        "ht_score": "1-0",
+        "ft_score": "1-1",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48431,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-15 17:00:00",
+      "match_start_iso": "2019-07-15T17:00:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 6,
+        "name": "Group stage"
+      },
+      "group": {
+        "group_id": 2066,
+        "group_name": "B"
+      },
+      "round": {
+        "round_id": 5506,
+        "name": "1",
+        "is_current": 1
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3110,
+        "name": "Czech Republic U19",
+        "short_code": "CZE",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1403.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3111,
+        "name": "France U19",
+        "short_code": "FRA",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1404.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 0,
+        "away_score": 3,
+        "ht_score": "0-1",
+        "ft_score": "0-3",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48433,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-17 14:45:00",
+      "match_start_iso": "2019-07-17T14:45:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 6,
+        "name": "Group stage"
+      },
+      "group": {
+        "group_id": 2065,
+        "group_name": "A"
+      },
+      "round": {
+        "round_id": 5511,
+        "name": "2",
+        "is_current": null
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3107,
+        "name": "Portugal U19",
+        "short_code": "POR",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1400.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3105,
+        "name": "Spain U19",
+        "short_code": "ESP",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1398.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 1,
+        "away_score": 1,
+        "ht_score": "0-1",
+        "ft_score": "1-1",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48434,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-17 17:00:00",
+      "match_start_iso": "2019-07-17T17:00:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 6,
+        "name": "Group stage"
+      },
+      "group": {
+        "group_id": 2065,
+        "group_name": "A"
+      },
+      "round": {
+        "round_id": 5511,
+        "name": "2",
+        "is_current": null
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3104,
+        "name": "Armenia U19",
+        "short_code": "ARM",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1397.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3106,
+        "name": "Italy U19",
+        "short_code": "ITA",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1399.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 0,
+        "away_score": 4,
+        "ht_score": "0-2",
+        "ft_score": "0-4",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48435,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-18 14:45:00",
+      "match_start_iso": "2019-07-18T14:45:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 6,
+        "name": "Group stage"
+      },
+      "group": {
+        "group_id": 2066,
+        "group_name": "B"
+      },
+      "round": {
+        "round_id": 5511,
+        "name": "2",
+        "is_current": null
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3110,
+        "name": "Czech Republic U19",
+        "short_code": "CZE",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1403.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3108,
+        "name": "Norway U19",
+        "short_code": "NOR",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1401.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 0,
+        "away_score": 0,
+        "ht_score": "0-0",
+        "ft_score": "0-0",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48436,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-18 17:00:00",
+      "match_start_iso": "2019-07-18T17:00:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 6,
+        "name": "Group stage"
+      },
+      "group": {
+        "group_id": 2066,
+        "group_name": "B"
+      },
+      "round": {
+        "round_id": 5511,
+        "name": "2",
+        "is_current": null
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3109,
+        "name": "Ireland U19",
+        "short_code": "IRL",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1402.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3111,
+        "name": "France U19",
+        "short_code": "FRA",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1404.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 0,
+        "away_score": 1,
+        "ht_score": "0-0",
+        "ft_score": "0-1",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48438,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-20 17:00:00",
+      "match_start_iso": "2019-07-20T17:00:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 6,
+        "name": "Group stage"
+      },
+      "group": {
+        "group_id": 2065,
+        "group_name": "A"
+      },
+      "round": {
+        "round_id": 5514,
+        "name": "3",
+        "is_current": null
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3105,
+        "name": "Spain U19",
+        "short_code": "ESP",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1398.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3106,
+        "name": "Italy U19",
+        "short_code": "ITA",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1399.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 2,
+        "away_score": 1,
+        "ht_score": "0-1",
+        "ft_score": "2-1",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48439,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-20 17:00:00",
+      "match_start_iso": "2019-07-20T17:00:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 6,
+        "name": "Group stage"
+      },
+      "group": {
+        "group_id": 2065,
+        "group_name": "A"
+      },
+      "round": {
+        "round_id": 5514,
+        "name": "3",
+        "is_current": null
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3107,
+        "name": "Portugal U19",
+        "short_code": "POR",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1400.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3104,
+        "name": "Armenia U19",
+        "short_code": "ARM",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1397.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 4,
+        "away_score": 0,
+        "ht_score": "1-0",
+        "ft_score": "4-0",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48441,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-21 17:00:00",
+      "match_start_iso": "2019-07-21T17:00:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 6,
+        "name": "Group stage"
+      },
+      "group": {
+        "group_id": 2066,
+        "group_name": "B"
+      },
+      "round": {
+        "round_id": 5514,
+        "name": "3",
+        "is_current": null
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3111,
+        "name": "France U19",
+        "short_code": "FRA",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1404.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3108,
+        "name": "Norway U19",
+        "short_code": "NOR",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1401.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 1,
+        "away_score": 0,
+        "ht_score": "0-0",
+        "ft_score": "1-0",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48443,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-21 17:00:00",
+      "match_start_iso": "2019-07-21T17:00:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 6,
+        "name": "Group stage"
+      },
+      "group": {
+        "group_id": 2066,
+        "group_name": "B"
+      },
+      "round": {
+        "round_id": 5514,
+        "name": "3",
+        "is_current": null
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3109,
+        "name": "Ireland U19",
+        "short_code": "IRL",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1402.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3110,
+        "name": "Czech Republic U19",
+        "short_code": "CZE",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1403.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 2,
+        "away_score": 1,
+        "ht_score": "1-0",
+        "ft_score": "2-1",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48445,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-24 14:00:00",
+      "match_start_iso": "2019-07-24T14:00:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 2,
+        "name": "Playoffs"
+      },
+      "group": {
+        "group_id": 200,
+        "group_name": "Knockout stage"
+      },
+      "round": {
+        "round_id": 5511,
+        "name": "2",
+        "is_current": null
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3107,
+        "name": "Portugal U19",
+        "short_code": "POR",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1400.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3109,
+        "name": "Ireland U19",
+        "short_code": "IRL",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1402.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 4,
+        "away_score": 0,
+        "ht_score": "2-0",
+        "ft_score": "4-0",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48447,
+      "status_code": 31,
+      "status": "finished with pen.",
+      "match_start": "2019-07-24 17:00:00",
+      "match_start_iso": "2019-07-24T17:00:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 2,
+        "name": "Playoffs"
+      },
+      "group": {
+        "group_id": 200,
+        "group_name": "Knockout stage"
+      },
+      "round": {
+        "round_id": 5511,
+        "name": "2",
+        "is_current": null
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3111,
+        "name": "France U19",
+        "short_code": "FRA",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1404.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3105,
+        "name": "Spain U19",
+        "short_code": "ESP",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1398.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 3,
+        "away_score": 4,
+        "ht_score": "0-0",
+        "ft_score": "0-0",
+        "et_score": null,
+        "ps_score": "3-4"
+      },
+      "venue": null
+    },
+    {
+      "match_id": 48449,
+      "status_code": 3,
+      "status": "finished",
+      "match_start": "2019-07-27 16:30:00",
+      "match_start_iso": "2019-07-27T16:30:00+00:00",
+      "minute": null,
+      "league_id": 268,
+      "season_id": 424,
+      "stage": {
+        "stage_id": 2,
+        "name": "Playoffs"
+      },
+      "group": {
+        "group_id": 200,
+        "group_name": "Knockout stage"
+      },
+      "round": {
+        "round_id": 5506,
+        "name": "1",
+        "is_current": 1
+      },
+      "referee_id": null,
+      "home_team": {
+        "team_id": 3107,
+        "name": "Portugal U19",
+        "short_code": "POR",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1400.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "away_team": {
+        "team_id": 3105,
+        "name": "Spain U19",
+        "short_code": "ESP",
+        "common_name": "",
+        "logo": "https:\/\/cdn.sportdataapi.com\/images\/soccer\/teams\/100\/1398.png",
+        "country": {
+          "country_id": 7,
+          "name": "World",
+          "country_code": null,
+          "continent": "World"
+        }
+      },
+      "stats": {
+        "home_score": 0,
+        "away_score": 2,
+        "ht_score": "0-1",
+        "ft_score": "0-2",
+        "et_score": null,
+        "ps_score": null
+      },
+      "venue": null
+    }
+  ]
+}

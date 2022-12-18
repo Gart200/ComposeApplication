@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.sp
 import com.example.composeapplication.model.Record
 
 @Composable
-fun CustomCard(record: Record) {
+fun TextCard(record: Record) {
     Card(
         modifier = Modifier
             .fillMaxWidth(),

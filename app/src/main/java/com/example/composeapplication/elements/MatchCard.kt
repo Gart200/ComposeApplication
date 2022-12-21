@@ -1,97 +1,124 @@
 package com.example.composeapplication
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
+import androidx.compose.material.Divider
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberAsyncImagePainter
-import com.example.composeapplication.data.response.MatchData
-import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
+import com.example.composeapplication.data.response.MatchItem
 
 @Composable
-fun MatchCard(matchData: MatchData) {
+fun MatchCard(match: MatchItem) {
     Card(
         modifier = Modifier
             .fillMaxWidth(),
         shape = RoundedCornerShape(10.dp),
         elevation = 5.dp,
 
-
         ) {
-
-        Row(
-            horizontalArrangement = Arrangement.SpaceAround,
+        Column(
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
+                .fillMaxHeight()
                 .fillMaxWidth()
-                .height(IntrinsicSize.Min)
-                .padding(8.dp)
+                .padding(5.dp)
         ) {
-            Column(
-                verticalArrangement = Arrangement.Top,
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.fillMaxHeight()
-            ) {
-                Image(
-                    painter = rememberAsyncImagePainter(model = matchData.homeTeam.logo),
-                    contentDescription = "HomeTeamLogo",
-                    modifier = Modifier
-                        .size(64.dp)
-                        .height(50.dp)
-                        .width(100.dp)
 
-                )
-                Text(text = matchData.homeTeam.shortCode)
-            }
-            Column(
-                verticalArrangement = Arrangement.SpaceEvenly,
-                horizontalAlignment = Alignment.CenterHorizontally,
+            Row(
+                horizontalArrangement = Arrangement.SpaceBetween,
                 modifier = Modifier
-                    .fillMaxHeight()
+                    .fillMaxWidth()
+                    .height(IntrinsicSize.Min)
+                    .padding(horizontal = 5.dp)
+
+
             ) {
                 Text(
-                    text = "${matchData.stats.homeScore} - ${matchData.stats.awayScore}",
-                    fontSize = 20.sp,
-                    fontWeight = FontWeight.Bold
+                    text = "${match.dateUtc.dropLast(1)}",
+                    fontSize = 14.sp,
                 )
-                if (matchData.group.groupName != "Knockout stage")
+                Text(
+                    text = "${match.location}",
+                    fontSize = 14.sp,
+                )
+            }
+            Row(
+                horizontalArrangement = Arrangement.SpaceBetween,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(IntrinsicSize.Min)
+                    .padding(horizontal = 5.dp)
+            ) {
+                Text(
+                    text = "MatchNumber: ${match.matchNumber}",
+                    fontSize = 14.sp,
+                )
+                Text(
+                    text = "RoundNumber: ${match.roundNumber}",
+                    fontSize = 14.sp,
+                )
+            }
+            Divider(thickness = 1.dp, color = Color.Black)
+
+            Row(
+                horizontalArrangement = Arrangement.SpaceBetween,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(IntrinsicSize.Min)
+                    .padding(horizontal = 10.dp, vertical = 6.dp)
+            ) {
+                Column(
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier.fillMaxHeight()
+                ) {
                     Text(
-                        text = "Group: ${matchData.group.groupName}",
+                        text = match.homeTeam,
                         fontSize = 20.sp,
                         fontWeight = FontWeight.Bold
                     )
-                else Text(
-                    text = "Playoff",
-                    fontSize = 20.sp,
-                    fontWeight = FontWeight.Bold
-                )
-
-            }
-            Column(
-                verticalArrangement = Arrangement.Top,
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.fillMaxHeight()
-            ) {
-                Image(
-                    painter = rememberAsyncImagePainter(model = matchData.awayTeam.logo),
-                    contentDescription = "HomeTeamLogo",
+                }
+                Column(
+                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally,
                     modifier = Modifier
-                        .size(64.dp)
-                        .height(50.dp)
-                        .width(100.dp)
-                )
-                Text(text = matchData.awayTeam.shortCode)
-            }
+                        .fillMaxHeight()
 
+                ) {
+
+
+                    Text(
+                        text = "${match.homeTeamScore} - ${match.awayTeamScore}",
+                        fontSize = 20.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+
+
+                }
+                Column(
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier.fillMaxHeight()
+                ) {
+                    Text(
+                        text = match.awayTeam,
+                        fontSize = 20.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+
+            }
         }
     }
 }

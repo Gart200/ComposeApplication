@@ -11,10 +11,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.composeapplication.MatchCard
-import com.example.composeapplication.data.response.MatchData
+import com.example.composeapplication.data.response.MatchItem
 
 @Composable
-fun FirstScreen(matches: List<MatchData>) {
+fun FirstScreen(matches: List<MatchItem>) {
 
     Box(modifier = Modifier.fillMaxSize()) {
 
@@ -24,7 +24,7 @@ fun FirstScreen(matches: List<MatchData>) {
             modifier = Modifier.fillMaxSize()
         ) {
             items(items = matches) {
-                MatchCard(matchData = it)
+                MatchCard(match = it)
             }
         }
 

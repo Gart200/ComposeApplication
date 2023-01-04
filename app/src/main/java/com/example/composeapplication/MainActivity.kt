@@ -23,7 +23,9 @@ import com.example.composeapplication.ui.theme.LightRed
 import com.example.composeapplication.viewModel.MatchViewModel
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     private fun getRecordsList(): List<Record> {

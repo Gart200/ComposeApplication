@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -9,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.composeapplication"
-        minSdk 23
+        minSdk 24
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -17,6 +19,13 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
+
+            javaCompileOptions {
+                annotationProcessorOptions {
+                    arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
+                }
+            }
+
         }
     }
 
@@ -46,6 +55,7 @@ android {
     }
 }
 
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
@@ -54,7 +64,7 @@ dependencies {
     implementation "androidx.compose.ui:ui:$compose_ui_version"
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_ui_version"
     implementation 'androidx.compose.material:material:1.1.1'
-    implementation 'com.google.code.gson:gson:2.8.9'
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
@@ -62,18 +72,34 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
 
-    implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.9.0'
-    implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.9.0'
+
+    implementation "androidx.compose.runtime:runtime-livedata:$compose_ui_version"
+    //coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
-    //implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
 
+    //retrofit
+    implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.9.0'
+    implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.9.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.10'
     implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.10'
 
-
+    //coil
     implementation "io.coil-kt:coil-compose:2.0.0-rc01"
 
+    // Hilt
+    implementation 'com.google.dagger:hilt-android:2.41'
+    kapt 'com.google.dagger:hilt-compiler:2.41'
+    implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
 
+    //room
+    def room_version = "2.4.1"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    //shimmer effect
+    implementation "com.valentinilk.shimmer:compose-shimmer:1.0.0"
 
 }

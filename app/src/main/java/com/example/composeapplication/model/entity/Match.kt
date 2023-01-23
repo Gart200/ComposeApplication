@@ -1,9 +1,15 @@
-package com.example.composeapplication.data.response
+package com.example.composeapplication.model.entity
 
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
-data class MatchItem(
+@Entity (tableName = "match")
+data class Match(
+    @SerializedName("MatchNumber")
+    @PrimaryKey
+    val matchNumber: Int,
     @SerializedName("AwayTeam")
     val awayTeam: String,
     @SerializedName("AwayTeamScore")
@@ -11,15 +17,13 @@ data class MatchItem(
     @SerializedName("DateUtc")
     val dateUtc: String,
     @SerializedName("Group")
-    val group: Any,
+    val group: String?,
     @SerializedName("HomeTeam")
     val homeTeam: String,
     @SerializedName("HomeTeamScore")
     val homeTeamScore: Int,
     @SerializedName("Location")
     val location: String,
-    @SerializedName("MatchNumber")
-    val matchNumber: Int,
     @SerializedName("RoundNumber")
     val roundNumber: Int
 )

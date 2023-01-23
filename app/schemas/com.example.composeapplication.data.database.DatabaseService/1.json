@@ -1,0 +1,108 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "3746160a1feec63d6fcea9a815236b4d",
+    "entities": [
+      {
+        "tableName": "match",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`matchNumber` INTEGER NOT NULL, `awayTeam` TEXT NOT NULL, `awayTeamScore` INTEGER NOT NULL, `dateUtc` TEXT NOT NULL, `group` TEXT, `homeTeam` TEXT NOT NULL, `homeTeamScore` INTEGER NOT NULL, `location` TEXT NOT NULL, `roundNumber` INTEGER NOT NULL, PRIMARY KEY(`matchNumber`))",
+        "fields": [
+          {
+            "fieldPath": "matchNumber",
+            "columnName": "matchNumber",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "awayTeam",
+            "columnName": "awayTeam",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "awayTeamScore",
+            "columnName": "awayTeamScore",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dateUtc",
+            "columnName": "dateUtc",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "group",
+            "columnName": "group",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "homeTeam",
+            "columnName": "homeTeam",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "homeTeamScore",
+            "columnName": "homeTeamScore",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "location",
+            "columnName": "location",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "roundNumber",
+            "columnName": "roundNumber",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "matchNumber"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "record",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`key` TEXT NOT NULL, `value` TEXT, PRIMARY KEY(`key`))",
+        "fields": [
+          {
+            "fieldPath": "key",
+            "columnName": "key",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "value",
+            "columnName": "value",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "key"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '3746160a1feec63d6fcea9a815236b4d')"
+    ]
+  }
+}

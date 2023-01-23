@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.composeapplication"
-        minSdk 23
+        minSdk 24
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -19,6 +19,13 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
+
+            javaCompileOptions {
+                annotationProcessorOptions {
+                    arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
+                }
+            }
+
         }
     }
 
@@ -48,6 +55,7 @@ android {
     }
 }
 
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
@@ -64,6 +72,8 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
 
+
+    implementation "androidx.compose.runtime:runtime-livedata:$compose_ui_version"
     //coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
@@ -83,6 +93,13 @@ dependencies {
     kapt 'com.google.dagger:hilt-compiler:2.41'
     implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
 
+    //room
+    def room_version = "2.4.1"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
 
+    //shimmer effect
+    implementation "com.valentinilk.shimmer:compose-shimmer:1.0.0"
 
 }

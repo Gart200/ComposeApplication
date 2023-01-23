@@ -1,29 +1,47 @@
 package com.example.composeapplication.viewModel
 
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.setValue
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import com.example.composeapplication.data.api.ApiService
-import com.example.composeapplication.data.response.MatchItem
+import android.text.TextUtils
+import androidx.lifecycle.*
+import com.example.composeapplication.model.entity.Match
+import com.example.composeapplication.network.ConnectivityObserver
+import com.example.composeapplication.repository.MatchRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class MatchViewModel: ViewModel() {
+@HiltViewModel
+class MatchViewModel @Inject constructor(
+    private val matchRepositoryImpl: MatchRepository,
+    private val connectivityObserver: ConnectivityObserver
+) : ViewModel() {
 
-    var matchListResponse:List<MatchItem> by mutableStateOf(listOf())
-    var errorMessage: String by mutableStateOf("")
+    private val searchStringLiveData = MutableLiveData("")
+    val allMatches: LiveData<List<Match>> = Transformations.switchMap(searchStringLiveData)
+    {
+        string->
+        if (TextUtils.isEmpty(string)) {
+            matchRepositoryImpl.getMatchList()
+        } else {
+            matchRepositoryImpl.getMatchByTeamName(string)
+        }
+    }
 
-    fun getMatchDataList(){
+    fun searchNameChanged(name: String) {
+        searchStringLiveData.value = name
+    }
+
+    fun loadMatchList() {
         viewModelScope.launch {
-            val apiService = ApiService.getInstance()
-            try {
-                val matchList = apiService.getMatches()
-                matchListResponse = matchList
-            }
-            catch (e: java.lang.Exception){
-                errorMessage = e.message.toString()
+            connectivityObserver.observe().collect {
+                if (it == ConnectivityObserver.Status.AVAILABLE) {
+                    viewModelScope.launch(Dispatchers.IO) {
+                        matchRepositoryImpl.loadMatchList()
+                    }
+                }
             }
         }
+
     }
 }

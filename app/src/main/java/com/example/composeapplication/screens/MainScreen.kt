@@ -1,5 +1,6 @@
 package com.example.composeapplication.screens
 
+import android.util.Log
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -51,7 +52,6 @@ fun MainScreen(viewModel: MainViewModel = hiltViewModel()) {
                 },
                 onCloseClicked = { viewModel.updateSearchWidgetState(newValue = SearchWidgetState.CLOSED) },
                 onSearchClicked = {
-
 
                     //TODO
                     //Не разобрался как правильно передать информацию из MainViewModel в MatchViewModel,

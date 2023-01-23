@@ -1,6 +1,7 @@
 package com.example.composeapplication.viewModel
 
 import android.text.TextUtils
+import android.util.Log
 import androidx.lifecycle.*
 import com.example.composeapplication.model.entity.Match
 import com.example.composeapplication.network.ConnectivityObserver
@@ -21,7 +22,7 @@ class MatchViewModel @Inject constructor(
     val allMatches: LiveData<List<Match>> = Transformations.switchMap(searchStringLiveData)
     {
         string->
-        if (TextUtils.isEmpty(string)) {
+        if (string == "") {
             matchRepositoryImpl.getMatchList()
         } else {
             matchRepositoryImpl.getMatchByTeamName(string)
